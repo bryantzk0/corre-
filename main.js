@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // Banco de dados com 15 perguntas (BNCC - Ciências 6º Ano)
   const questions = [
     {
       question: "Qual é a unidade fundamental da vida que forma a maioria dos seres vivos?",
@@ -24,6 +25,56 @@ document.addEventListener('DOMContentLoaded', () => {
       question: "Qual gás presente na atmosfera é essencial para a respiração dos seres humanos?",
       options: ["Gás Carbônico", "Gás Nitrogênio", "Gás Oxigênio", "Gás Hélio"],
       correctIndex: 2
+    },
+    {
+      question: "Qual organela celular é responsável pela realização da fotossíntese nas plantas?",
+      options: ["Mitocôndria", "Cloroplasto", "Núcleo", "Ribossomo"],
+      correctIndex: 1
+    },
+    {
+      question: "Qual é a principal função do sistema esquelético no corpo humano?",
+      options: ["Digestão de alimentos", "Sustentação e proteção dos órgãos", "Bombear o sangue", "Filtrar impurezas"],
+      correctIndex: 1
+    },
+    {
+      question: "Como se chama o processo em que a água líquida passa para o estado gasoso pelo calor do Sol?",
+      options: ["Condensação", "Evaporação", "Solidificação", "Transpiração"],
+      correctIndex: 1
+    },
+    {
+      question: "As rochas formadas pelo resfriamento e petrificação do magma vulcânico são chamadas de:",
+      options: ["Magmáticas (Ígneas)", "Sedimentares", "Metamórficas", "Fósseis"],
+      correctIndex: 0
+    },
+    {
+      question: "Qual método é mais adequado para separar uma mistura heterogênea de areia e água?",
+      options: ["Evaporação", "Filtração", "Catação", "Magnetismo"],
+      correctIndex: 1
+    },
+    {
+      question: "Fungos e bactérias desempenham um papel fundamental na natureza atuando como:",
+      options: ["Produtores", "Consumidores primários", "Decompositores", "Predadores"],
+      correctIndex: 2
+    },
+    {
+      question: "Em qual órgão do sistema digestório ocorre a maior parte da absorção dos nutrientes?",
+      options: ["Estômago", "Esôfago", "Boca", "Intestino Delgado"],
+      correctIndex: 3
+    },
+    {
+      question: "Em qual tipo de rocha é mais comum encontrar fósseis de plantas e animais antigos?",
+      options: ["Rochas Sedimentares", "Rochas Magmáticas", "Rochas Metamórficas", "Lava vulcânica"],
+      correctIndex: 0
+    },
+    {
+      question: "Qual camada da atmosfera contém o gás responsável por filtrar os raios ultravioleta (UV)?",
+      options: ["Termosfera", "Camada de Ozônio", "Troposfera", "Núcleo"],
+      correctIndex: 1
+    },
+    {
+      question: "O desvio na trajetória da luz ao passar do ar para a água é chamado de:",
+      options: ["Reflexão", "Refração", "Absorção", "Difração"],
+      correctIndex: 1
     }
   ];
 
