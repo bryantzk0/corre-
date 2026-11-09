@@ -21,20 +21,19 @@
     <!-- Tela Inicial -->
     <section id="screen-start" class="card screen">
       <h2>Bem-vindo, Explorador da Natureza! 🔬</h2>
-      <p>Teste seus conhecimentos sobre ecossistemas, células e o Planeta Terra. Responda corretamente para acumular pontos!</p>
+      <p>Teste seus conhecimentos sobre ecossistemas, células e o Planeta Terra!</p>
       <div class="rules-box">
         <p>🎯 <strong>Como Jogar:</strong></p>
         <ul>
           <li>Responda a 5 perguntas de múltipla escolha.</li>
           <li>Você tem 3 vidas ❤️ por partida.</li>
-          <li>Acerte o máximo que puder para vencer!</li>
+          <li>Conquiste a melhor pontuação!</li>
         </ul>
       </div>
-      <!-- Chamada direta onclick adicionada como garantia -->
-      <button id="btn-start" class="btn primary-btn" onclick="startGame()">Iniciar Aventura! 🚀</button>
+      <button id="btn-start" class="btn primary-btn" type="button">Iniciar Aventura! 🚀</button>
     </section>
 
-    <!-- Tela de Jogo -->
+    <!-- Tela do Jogo -->
     <section id="screen-game" class="card screen hidden">
       <div class="hud">
         <div class="hud-item">
@@ -52,13 +51,11 @@
       </div>
 
       <div class="question-container">
-        <span id="category-badge" class="badge">Ciências</span>
-        <h3 id="question-text">Texto da pergunta aqui...</h3>
+        <span class="badge">Ciências</span>
+        <h3 id="question-text">Texto da pergunta...</h3>
       </div>
 
-      <div id="options-container" class="options-grid">
-        <!-- Botões de resposta gerados via JS -->
-      </div>
+      <div id="options-container" class="options-grid"></div>
     </section>
 
     <!-- Tela Final -->
@@ -73,16 +70,15 @@
         <p id="final-percentage">100% de aproveitamento</p>
       </div>
 
-      <button id="btn-restart" class="btn primary-btn" onclick="startGame()">Jogar Novamente 🔄</button>
+      <button id="btn-restart" class="btn primary-btn" type="button">Jogar Novamente 🔄</button>
     </section>
 
     <!-- Rodapé -->
     <footer class="main-footer">
-      <p>Desenvolvido para a Feira de Ciências e Tecnologia • Ensino Fundamental II</p>
+      <p>Desenvolvido para o 6º Ano • Ensino Fundamental II</p>
     </footer>
   </div>
 
-  <!-- Script carregado no final do body -->
   <script src="script.js"></script>
 </body>
 </html>
