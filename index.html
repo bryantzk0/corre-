@@ -8,8 +8,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Atributo defer para garantir que o script rode após a montagem do HTML -->
-  <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -32,7 +30,8 @@
           <li>Acerte o máximo que puder para vencer!</li>
         </ul>
       </div>
-      <button id="btn-start" class="btn primary-btn">Iniciar Aventura! 🚀</button>
+      <!-- Chamada direta onclick adicionada como garantia -->
+      <button id="btn-start" class="btn primary-btn" onclick="startGame()">Iniciar Aventura! 🚀</button>
     </section>
 
     <!-- Tela de Jogo -->
@@ -74,7 +73,7 @@
         <p id="final-percentage">100% de aproveitamento</p>
       </div>
 
-      <button id="btn-restart" class="btn primary-btn">Jogar Novamente 🔄</button>
+      <button id="btn-restart" class="btn primary-btn" onclick="startGame()">Jogar Novamente 🔄</button>
     </section>
 
     <!-- Rodapé -->
@@ -83,5 +82,7 @@
     </footer>
   </div>
 
+  <!-- Script carregado no final do body -->
+  <script src="script.js"></script>
 </body>
 </html>
