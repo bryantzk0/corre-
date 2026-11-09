@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EcoQuiz 6º Ano - Exploradores da Ciência</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="game-container">
+    <!-- Cabeçalho -->
+    <header class="main-header">
+      <div class="logo">🌱 EcoQuiz</div>
+      <p class="subtitle">Desafio de Ciências - 6º Ano</p>
+    </header>
+
+    <!-- Tela Inicial -->
+    <section id="screen-start" class="card screen active">
+      <h2>Bem-vindo, Explorador da Natureza! 🔬</h2>
+      <p>Teste seus conhecimentos sobre ecossistemas, células e o Planeta Terra. Responda corretamente para acumular pontos!</p>
+      <div class="rules-box">
+        <p>🎯 <strong>Como Jogar:</strong></p>
+        <ul>
+          <li>Responda a 5 perguntas de múltipla escolha.</li>
+          <li>Você tem 3 vidas ❤️ por partida.</li>
+          <li>Acerte o máximo que puder para vencer!</li>
+        </ul>
+      </div>
+      <button id="btn-start" class="btn primary-btn">Iniciar Aventura! 🚀</button>
+    </section>
+
+    <!-- Tela de Jogo -->
+    <section id="screen-game" class="card screen hidden">
+      <div class="hud">
+        <div class="hud-item">
+          <span class="hud-label">Pontos:</span>
+          <span id="score-display" class="hud-value">0</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Vidas:</span>
+          <span id="lives-display" class="hud-value">❤️❤️❤️</span>
+        </div>
+        <div class="hud-item">
+          <span class="hud-label">Questão:</span>
+          <span id="question-count" class="hud-value">1/5</span>
+        </div>
+      </div>
+
+      <div class="question-container">
+        <span id="category-badge" class="badge">Ciências</span>
+        <h3 id="question-text">Texto da pergunta aqui...</h3>
+      </div>
+
+      <div id="options-container" class="options-grid">
+        <!-- Botões de resposta gerados via JS -->
+      </div>
+    </section>
+
+    <!-- Tela Final -->
+    <section id="screen-end" class="card screen hidden">
+      <div id="end-icon" class="end-icon">🏆</div>
+      <h2 id="end-title">Parabéns!</h2>
+      <p id="end-message">Você concluiu o desafio com sucesso!</p>
+      
+      <div class="score-summary">
+        <p>Sua pontuação final:</p>
+        <span id="final-score" class="big-score">0</span>
+        <p id="final-percentage">100% de aproveitamento</p>
+      </div>
+
+      <button id="btn-restart" class="btn primary-btn">Jogar Novamente 🔄</button>
+    </section>
+
+    <!-- Rodapé -->
+    <footer class="main-footer">
+      <p>Desenvolvido para a Feira de Ciências e Tecnologia • Ensino Fundamental II</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
